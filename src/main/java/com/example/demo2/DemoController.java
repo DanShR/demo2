@@ -11,20 +11,20 @@ import java.util.List;
 @RequestMapping("/demo")
 public class DemoController {
 
-    /*private final CountryRepo countryRepo;
+    private final CountryRepo countryRepo;
 
     @Autowired
     public DemoController(CountryRepo countryRepo) {
         this.countryRepo = countryRepo;
-    }*/
+    }
 
     @GetMapping
-    public String demo() {
-        /*Country country = new Country();
+    public List<Country> demo() {
+        Country country = new Country();
         country.setName("RU");
         countryRepo.save(country);
-        List<Country> countryList = countryRepo.findAll();*/
-        return "hello from demo 2";
+        List<Country> countryList = countryRepo.findAll();
+        return countryList;
     }
 
 }
