@@ -20,9 +20,7 @@ public class DemoController {
 
     @GetMapping
     public List<Country> demo() {
-        Country country = new Country();
-        country.setName("RU");
-        countryRepo.save(country);
+
         List<Country> countryList = countryRepo.findAll();
         return countryList;
     }
