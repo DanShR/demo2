@@ -1,3 +1,4 @@
+/*
 package com.example.demo2;
 
 import javax.persistence.*;
@@ -30,3 +31,4 @@ public class Country {
         this.name = name;
     }
 }
+*/
